@@ -1,103 +1,102 @@
 html {
-       background-color: #EDE9E5;
+  background-color: #EDE9E5;
 }
 
-
 #content {
-       margin: 0 auto;
-       width: 250px;
-       height: 100%;
-       margin-top: -100px;
-       border: 5px solid white;
-       background-color: rgba(255,255,255,0.75);
-       border-radius: 10px 10px 10px 10px;
-       box-shadow: 5px 5px 10px -5px;
+  margin: 0 auto;
+  width: 250px;
+  height: 100%;
+  margin-top: -100px;
+  border: 5px solid white;
+  background-color: rgba(255,255,255,0.75);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 10px -5px;
 }
 
 #content>h1 {
-       text-align: center;
-       font-size: 32px;
+  text-align: center;
+  font-size: 32px;
 }
 
 #content>h2 {
-       text-align: center;
-       font-size: 18px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .icons {
-       width: 80%;
-       margin: 0 auto;
-       height: 100%;
-       overflow: auto;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  overflow: auto;
 
 }
 
 .icons>a>img {
-       float:left;
-       width: 80px;
-       height: 80px;
-       padding: 5px;
-       border: 5px solid transparent
+  float:left;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  border: 5px solid transparent
 }
 
 .icons>a>img:hover {
-       border-radius: 10px; 
-       border: 5px solid #BADA55;       
+  border-radius: 10px;
+  border: 5px solid #BADA55;
 }
 
 .icons>a:hover:after{
-       background: #333;
-       border-radius: 5px;
-       color: #fff;
-       text-align: center;
-       content: attr(title);
-       padding: 5px 15px;
-       position: fixed;
-       left: calc(50% - 125px);
-       margin-top: -40px;
-       z-index: 98;
-       width: 220px;
+  background: #333;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  content: attr(title);
+  padding: 5px 15px;
+  position: fixed;
+  left: calc(50% - 125px);
+  margin-top: -40px;
+  z-index: 98;
+  width: 220px;
 }
 
 #footer {
-       position: fixed;
-       width: 100%;
-       padding-top: 10px;
-       margin-bottom: 0;
-       height: 12px;
+  position: fixed;
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 0;
+  height: 12px;
 }
 
 #footer>p {
-       text-align: center;
-       font-size: 10px;
+  text-align: center;
+  font-size: 10px;
 }
 
 /*Spinning the circly text*/
 #warped.enter {
-       -webkit-animation:spin 50s linear infinite;
-       -moz-animation:spin 50s linear infinite;
-       animation:spin 50s linear infinite;
-       animation-direction:reverse;
-       }
-       @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-       @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-       @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  -webkit-animation:spin 50s linear infinite;
+  -moz-animation:spin 50s linear infinite;
+  animation:spin 50s linear infinite;
+  animation-direction:reverse;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 /* Centering the circly text div*/
 .enter {
-       margin-top: -100px;
-       left: calc(50% - 298px);
-       /*margin-left: auto;
-       margin-right: auto;*/
-       overflow: hidden;
-       z-index: -1;
+  margin-top: -100px;
+  left: calc(50% - 298px);
+  /*margin-left: auto;
+  margin-right: auto;*/
+  overflow: hidden;
+  z-index: -1;
 }
 /*The circly text*/
 #warped {
-       position: relative;
-       display: block;
-       width:588px;
-       height:440px;
+  position: relative;
+  display: block;
+  width:588px;
+  height:440px;
 }
 
 #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
