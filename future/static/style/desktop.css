@@ -1,23 +1,40 @@
-#datBodyDough {
+#datBodyDough, html {
   background-color: lightgreen;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
+#wrapper {
+  height: 100%;
+  width: 100%;
+}
+
 .header {
+  padding: 10px;
   height: 50px;
   width: auto;
-  background-color: fuchsia;
+  background-color: snow;
+  text-align: center;
+}
+
+.footer {
+  padding: 10px;
+  height: 50px;
+  width: auto;
+  background-color: snow;
+  text-align: center;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  height: calc( 100% - 140px );
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   overflow-x: scroll;
+  overflow-y:  hidden;
 }
-
 
 .card-size-small {
   min-width: 100px;
@@ -48,27 +65,17 @@
   -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
   box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 
-  -webkit-transition: margin-top 0.2s;
-  transition: margin-top 0.2s;
-
-  -webkit-transition: box-shadow 0.1s;
-  transition: box-shadow 0.1s;
-  -webkit-transition: -webkit-box-shadow 0.1s;
-  transition: -webkit-box-shadow 0.1s;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .card:hover {
   margin-top: 10px;
-  -webkit-box-shadow: 13px 13px 17px rgba(0,0,0,0.4);
-  box-shadow: 13px 13px 17px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 13px 13px 7px rgba(0,0,0,0.2);
+  box-shadow: 13px 13px 7px rgba(0,0,0,0.2);
 
-  -webkit-transition: margin-top 0.2s;
-  transition: margin-top 0.2s;
-
-  -webkit-transition: box-shadow 0.1s;
-  transition: box-shadow 0.1s;
-  -webkit-transition: -webkit-box-shadow 0.1s;
-  transition: -webkit-box-shadow 0.1s;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-top {
