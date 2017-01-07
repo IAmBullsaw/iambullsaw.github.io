@@ -1,0 +1,28 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  min-height: 50%;
+  min-width: 200px;
+  width: auto;
+  margin: auto;
+  background-color: blue;
+}
+
+.front {
+  color: snow;
+}
+
+.back {
+  color: green;
+}
+
+.description {
+  background-color: fuchsia;
+}

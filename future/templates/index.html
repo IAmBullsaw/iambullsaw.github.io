@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oskar's Homepage</title>
+  {% include 'head.html' %}
+</head>
+
+<body id="datBodyDough">
+<!-- Oh girl, look at my body! -->
+<div id="card-container" class="container">
+  {% for card in cards %}
+  <div class="card front">
+    <h1>{{card._title}}</h1>
+    <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
+    <p class="description">{{card._description}}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+  let d = document.getElementById("card-container");
+  if (d.addEventListener) {
+	// IE9, Chrome, Safari, Opera
+	d.addEventListener("mousewheel", MouseWheelHandler, false);
+	// Firefox
+	d.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+  }
+  // IE 6/7/8
+  else myimage.attachEvent("onmousewheel", MouseWheelHandler);
+
+  function MouseWheelHandler(e) {
+  	// cross-browser wheel delta
+  	let e = window.event || e; // old IE support
+  	let delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    window.scrollBy(-(delta*30),0);
+    console.log("Scrolling");
+  	return false;
+  }
+
+</script>
+
+</body>
+
+</html>
