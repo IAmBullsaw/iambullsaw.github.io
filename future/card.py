@@ -1,5 +1,3 @@
-import logging
-logging.basicConfig(filename='card.log',format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 class Card:
     """ The class to hold the information for a project or similar """
     _cid = 0
@@ -10,25 +8,25 @@ class Card:
 
     def __init__(self, title, description, text, images, unread = False, cid = None ):
         """ Checks for correct parameter types and sets images to default if none passed """
-        message = 'Failed to initialize Card: '
+#        message = 'Failed to initialize Card: '
         # Assert types are correct
         if not isinstance(title, str):
-            logging.error(message + 'title is not a str')
+#            logging.error(message + 'title is not a str')
             raise TypeError
         if not isinstance(description, str):
-            logging.error(message + 'description is not a str')
+#            logging.error(message + 'description is not a str')
             raise TypeError
         if not isinstance(text, str):
-            logging.error(message + 'text is not a str')
+#            logging.error(message + 'text is not a str')
             raise TypeError
         if not isinstance(images, list):
-            logging.error(message + 'images is not a list')
+#            logging.error(message + 'images is not a list')
             raise TypeError
         if not isinstance(unread, bool):
-            logging.error(message + 'unread is not a bool')
+#            logging.error(message + 'unread is not a bool')
             raise TypeError
         if cid is not None and not isinstance(cid, int):
-            logging.error(message + 'cid is not a int')
+#            logging.error(message + 'cid is not a int')
             raise TypeError
 
         self._id = Card._get_new_id() if cid is None else cid
@@ -38,7 +36,17 @@ class Card:
         self._unread = unread
 
         # If we pass an empty list of images, we set it to default image.
-        self._images = images if len(images) > 0 else ['default.png','Header image.']
+        self._images = images if len(images) > 0 else [('default.png','Header image.')]
+
+    def to_dict(self):
+        d = {}
+        d['_id'] = self._id
+        d['_title'] = self._title
+        d['_description'] = self._description
+        d['_text'] = self._text
+        d['_unread'] = self._unread
+        d['_images'] = self._images
+        return d
 
     def get_header_image(self):
         """ Header image is always the first image """
