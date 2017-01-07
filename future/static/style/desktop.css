@@ -18,23 +18,28 @@
   overflow-x: scroll;
 }
 
-.card-top {
-  color: #6b6b6b;
-  text-align: center;
+
+.card-size-small {
+  min-width: 100px;
+  max-width: 100px;
+  max-height: 187px;
 }
 
-.card-size-small {}
-
-.card-size-medium {}
+.card-size-medium {
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 373px;
+}
 
 .card-size-large {
-    width: auto;
-    height: auto;
-    min-height: 50%;
-    min-width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 560px;
+  max-height: 560px;
 }
 
 .card {
+  width: auto;
   margin: 20px;
   background-color: snow;
   text-align: center;
@@ -42,8 +47,34 @@
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
   box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+
+  -webkit-transition: margin-top 0.2s;
+  transition: margin-top 0.2s;
+
+  -webkit-transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+  -webkit-transition: -webkit-box-shadow 0.1s;
+  transition: -webkit-box-shadow 0.1s;
 }
 
+.card:hover {
+  margin-top: 10px;
+  -webkit-box-shadow: 13px 13px 17px rgba(0,0,0,0.4);
+  box-shadow: 13px 13px 17px rgba(0,0,0,0.4);
+
+  -webkit-transition: margin-top 0.2s;
+  transition: margin-top 0.2s;
+
+  -webkit-transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+  -webkit-transition: -webkit-box-shadow 0.1s;
+  transition: -webkit-box-shadow 0.1s;
+}
+
+.card-top {
+  color: #6b6b6b;
+  text-align: center;
+}
 .card-bottom {
 }
 
@@ -53,6 +84,7 @@
 
 .card-back {
   color: green;
+  background-color: blue;
 }
 .hidden {
   visibility: hidden;

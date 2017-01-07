@@ -12,7 +12,7 @@
 
   <div id="card-container" class="container">
     {% for card in cards %}
-    <div class="card">
+    <div class="card card-size-large">
       <!-- The things both sides have in common -->
       <div class="card-top">
         <h1>{{card._title}}</h1>
@@ -43,7 +43,7 @@
 	d.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
   }
   // IE 6/7/8
-  else myimage.attachEvent("onmousewheel", MouseWheelHandler);
+  else d.attachEvent("onmousewheel", MouseWheelHandler);
 
   function MouseWheelHandler(e) {
   	// cross-browser wheel delta
