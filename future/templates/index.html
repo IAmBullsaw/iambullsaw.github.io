@@ -3,37 +3,60 @@
 <head>
   <title>Oskar's Homepage</title>
   {% include 'head.html' %}
+
+  <script>
+    var aCardIsFocused = 0;
+    function onClickCard(id) {
+      console.log("clicked id:" + id);
+      let b = document.getElementById('blocker');
+      let c = document.getElementById("card-"+id);
+      let front = document.getElementById("card-front-"+id);
+      let back = document.getElementById("card-back-"+id);
+
+      if (/enhanced/.test(c.className)) {
+        aCardIsFocused = 0;
+        front.classList.remove('hidden');
+        back.classList.add('hidden');
+        b.className = 'hidden';
+        c.classList.remove('enhanced');
+      } else {
+        aCardIsFocused = 1;
+        front.classList.add('hidden');
+        back.classList.remove('hidden');
+        b.className = '';
+        c.classList.add('enhanced');
+      }
+    }
+  </script>
 </head>
 
 <body id="datBodyDough">
 <!-- Oh girl, look at my body! -->
   <div id="wrapper">
     {% include 'header.html' %}
+    <div id="blocker" class="hidden"></div>
+      <div id="card-container" class="container">
+        {% for card in cards %}
+        <div id="card-{{card._id}}" class="card card-size-large" onclick="onClickCard({{card._id}})">
+          <!-- The things both sides have in common -->
+          <div class="card-top">
+            <h1>{{card._title}}</h1>
+            <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
+          </div>
 
-    <div id="card-container" class="container">
-      {% for card in cards %}
-      <div id="card-{{card._id}}" class="card card-size-large">
-        <!-- The things both sides have in common -->
-        <div class="card-top">
-          <h1>{{card._title}}</h1>
-          <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
-        </div>
+          <div id="card-front-{{card._id}}" class="card-front">
+            <p class="description">{{card._description}}</p>
+          </div>
 
-        <div id="card-front-{{card._id}}" class="card-front">
-          <p class="description">{{card._description}}</p>
-        </div>
+          <div id="card-back-{{card._id}}" class="card-back hidden">
+            <p class="text">{{card._text}}</p>
+          </div>
 
-        <div id="card-back-{{card._id}}" class="card-back hidden">
-          <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
-          <p class="description">{{card._description}}</p>
+          <div class="card-bottom">
+          </div>
         </div>
-
-        <div class="card-bottom">
-        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
-    
     {% include 'footer.html' %}
   </div>
 <!-- Script for vertical scrolling the card-container -->
@@ -50,16 +73,17 @@
 
   function MouseWheelHandler(e) {
   	// cross-browser wheel delta
-  	var e = window.event || e; // old IE support
-  	var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    if (aCardIsFocused === 0) {
+    	var e = window.event || e; // old IE support
+    	var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
-    let d = document.getElementById("card-container");
-    d.scrollBy(-(delta*30),0);
-    // window.scrollBy(-(delta*30),0);
-    console.log("Scrolling");
-  	return false;
+      let d = document.getElementById("card-container");
+      d.scrollBy(-(delta*30),0);
+    	return false;
+    } else {
+      return true;
+    }
   }
-
 </script>
 
 </body>

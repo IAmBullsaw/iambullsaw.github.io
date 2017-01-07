@@ -8,6 +8,14 @@
   height: 100%;
   width: 100%;
 }
+#blocker {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 70px);
+  margin: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+}
 
 .header {
   padding: 10px;
@@ -33,7 +41,7 @@
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
-  overflow-y:  hidden;
+  overflow-y: hidden;
 }
 
 .card-size-small {
@@ -83,6 +91,7 @@
   text-align: center;
 }
 .card-bottom {
+  height: 70px;
 }
 
 .card-front {
@@ -90,13 +99,21 @@
 }
 
 .card-back {
-  color: green;
-  background-color: blue;
+  color: white;
+  background-color: orange;
 }
 .hidden {
+  display: none;
   visibility: hidden;
 }
 
 .description {
   background-color: fuchsia;
+}
+
+.enhanced {
+  min-height: calc(100% - 70px);
+  min-width: 80%;
+  z-index: 2;
+  overflow-y: scroll;
 }
