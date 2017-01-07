@@ -39,7 +39,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -78,7 +78,6 @@
 }
 
 .card:hover {
-  margin-top: 10px;
   -webkit-box-shadow: 13px 13px 7px rgba(0,0,0,0.2);
   box-shadow: 13px 13px 7px rgba(0,0,0,0.2);
 
@@ -113,7 +112,13 @@
 
 .enhanced {
   min-height: calc(100% - 70px);
-  min-width: 80%;
+  min-width: 600px;
   z-index: 2;
   overflow-y: scroll;
+  -webkit-box-shadow: 23px 23px 17px rgba(0,0,0,0.2) !important;
+  box-shadow: 23px 23px 17px rgba(0,0,0,0.2) !important;
+}
+
+.widthify {
+  min-width: calc(100%+700px);
 }

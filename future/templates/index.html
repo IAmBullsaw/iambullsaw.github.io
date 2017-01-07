@@ -8,23 +8,36 @@
     var aCardIsFocused = 0;
     function onClickCard(id) {
       console.log("clicked id:" + id);
+      // Get the elements
       let b = document.getElementById('blocker');
       let c = document.getElementById("card-"+id);
+      let d = document.getElementById("card-container");
       let front = document.getElementById("card-front-"+id);
       let back = document.getElementById("card-back-"+id);
 
+      // Toggle enhanced
       if (/enhanced/.test(c.className)) {
         aCardIsFocused = 0;
         front.classList.remove('hidden');
         back.classList.add('hidden');
         b.className = 'hidden';
         c.classList.remove('enhanced');
+        d.classList.remove('widthify');
       } else {
         aCardIsFocused = 1;
         front.classList.add('hidden');
         back.classList.remove('hidden');
         b.className = '';
         c.classList.add('enhanced');
+
+        let bodyRect = document.body.getBoundingClientRect();
+        let elemRect = c.getBoundingClientRect();
+        let offset = elemRect.left - bodyRect.left;
+
+        d.classList.add('widthify');
+        d.scrollBy(offset-20,0);
+        //console.log('elemRect.left: ' + elemRect.left + ', elemRect.right: ' + elemRect.right + ', offset: ' + offset);
+
       }
     }
   </script>
