@@ -43,7 +43,7 @@ class CardTest(unittest.TestCase):
     def test_getters(self):
         self.assertEqual(self.card.get_header_image(),('image_path','alt text'))
         # By definition indexes out of range returns default image
-        self.assertEqual(self.card.get_image_at(42),('default','Missing image.'))
+        self.assertEqual(self.card.get_image_at(42),('default.png','Missing image.'))
 
 if __name__ == '__main__':
     unittest.main()

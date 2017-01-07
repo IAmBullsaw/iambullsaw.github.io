@@ -38,7 +38,7 @@ class Card:
         self._unread = unread
 
         # If we pass an empty list of images, we set it to default image.
-        self._images = images if len(images) > 0 else ['default','Header image.']
+        self._images = images if len(images) > 0 else ['default.png','Header image.']
 
     def get_header_image(self):
         """ Header image is always the first image """
@@ -46,7 +46,7 @@ class Card:
 
     def get_image_at(self, index):
         """ if index is out of range then return Default image """
-        return self._images[index] if index < len(self._images) else ('default','Missing image.')
+        return self._images[index] if index < len(self._images) else ('default.png','Missing image.')
 
     def is_unread(self):
         return self._unread
