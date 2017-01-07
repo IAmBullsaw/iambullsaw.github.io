@@ -1,26 +1,61 @@
+#datBodyDough {
+  background-color: lightgreen;
+}
+.header {
+  height: 50px;
+  width: auto;
+  background-color: fuchsia;
+}
 
 .container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  overflow-x: scroll;
+}
+
+.card-top {
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.card-size-small {}
+
+.card-size-medium {}
+
+.card-size-large {
+    width: auto;
+    height: auto;
+    min-height: 50%;
+    min-width: 300px;
 }
 
 .card {
-  min-height: 50%;
-  min-width: 200px;
-  width: auto;
-  margin: auto;
-  background-color: blue;
+  margin: 20px;
+  background-color: snow;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 }
 
-.front {
+.card-bottom {
+}
+
+.card-front {
   color: snow;
 }
 
-.back {
+.card-back {
   color: green;
+}
+.hidden {
+  visibility: hidden;
 }
 
 .description {

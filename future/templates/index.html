@@ -7,16 +7,33 @@
 
 <body id="datBodyDough">
 <!-- Oh girl, look at my body! -->
-<div id="card-container" class="container">
-  {% for card in cards %}
-  <div class="card front">
-    <h1>{{card._title}}</h1>
-    <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
-    <p class="description">{{card._description}}</p>
-  </div>
-  {% endfor %}
-</div>
 
+  {% include 'header.html' %}
+
+  <div id="card-container" class="container">
+    {% for card in cards %}
+    <div class="card">
+      <!-- The things both sides have in common -->
+      <div class="card-top">
+        <h1>{{card._title}}</h1>
+        <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
+      </div>
+
+      <div class="card-front">
+        <p class="description">{{card._description}}</p>
+      </div>
+
+      <div class="card-back hidden">
+        <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
+        <p class="description">{{card._description}}</p>
+      </div>
+
+      <div class="card-bottom">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+<!-- Script for vertical scrolling the card-container -->
 <script>
   let d = document.getElementById("card-container");
   if (d.addEventListener) {
@@ -30,9 +47,12 @@
 
   function MouseWheelHandler(e) {
   	// cross-browser wheel delta
-  	let e = window.event || e; // old IE support
-  	let delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-    window.scrollBy(-(delta*30),0);
+  	var e = window.event || e; // old IE support
+  	var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+
+    let d = document.getElementById("card-container");
+    d.scrollBy(-(delta*30),0);
+    // window.scrollBy(-(delta*30),0);
     console.log("Scrolling");
   	return false;
   }
