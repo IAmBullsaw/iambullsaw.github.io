@@ -98,7 +98,11 @@
     }
   }
 </script>
-
+{% if n != None %}
+<script>
+  onClickCard({{cards[n]._id}})
+</script>
+{% endif %}
 </body>
 
 </html>
