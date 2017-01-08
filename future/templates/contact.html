@@ -6,8 +6,11 @@
 </head>
 <body>
   {% include 'header.html' %}
-  <h1>QR vcard</h1>
-  <img src="../static/images/qrcode.svg" alt="QR code for simple vcard.">
-  {% include 'details.html' %}
+  <div class="card card-size-full">
+    <h1>QR vcard</h1>
+    <img src="../static/images/qrcode.svg" alt="QR code for simple vcard.">
+    {% include 'details.html' %}
+  </div>
+  {% include 'footer.html' %}
 </body>
 </html>

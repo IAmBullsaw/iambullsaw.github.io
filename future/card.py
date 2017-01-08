@@ -16,8 +16,8 @@ class Card:
         if not isinstance(description, str):
 #            logging.error(message + 'description is not a str')
             raise TypeError
-        if not isinstance(text, str):
-#            logging.error(message + 'text is not a str')
+        if not isinstance(text, list):
+#            logging.error(message + 'text is not a list')
             raise TypeError
         if not isinstance(images, list):
 #            logging.error(message + 'images is not a list')

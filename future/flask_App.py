@@ -59,7 +59,7 @@ def number(n):
     if (n >= 0 and n < len(cards)):
         return render_template('index.html',cards = cards, n = n)
     else:
-        return error_404("404 - Not Found","Helpful tip: Try a number in 0 - '{}'.".format(len(cards)))
+        return error_404("404 - Not Found","Helpful tip: Try something more like 0 - {}.".format(len(cards)-1))
 
 @app.errorhandler(400)
 def error_400(error, message = None):

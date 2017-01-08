@@ -56,19 +56,22 @@
             <h1>{{card._title}}</h1>
             <img src="../static/images/{{card.get_header_image()[0]}}" alt="{{card.get_header_image()[1]}}">
           </div>
-
+          <div class="card-bottom">
           <div id="card-front-{{card._id}}" class="card-front">
             <p class="description">{{card._description}}</p>
           </div>
 
           <div id="card-back-{{card._id}}" class="card-back hidden">
-            <p class="text">{{card._text}}</p>
+            {% for text in card._text %}
+            <p class="text">{{text}}</p>
+            {% endfor %}
           </div>
 
-          <div class="card-bottom">
+
           </div>
         </div>
         {% endfor %}
+        {% include 'pusher.html' %}
       </div>
     {% include 'footer.html' %}
   </div>
