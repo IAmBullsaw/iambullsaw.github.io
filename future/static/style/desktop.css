@@ -191,3 +191,9 @@ a:hover {
 .header a {
   margin: 1em;
 }
+
+.card-top-image {
+  max-width: 160px;
+  max-height: 160px;
+  border-bottom: 0.2em solid firebrick;
+}

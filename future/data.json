@@ -3,7 +3,7 @@
     "_description": "Click a card",
     "_unread": false,
     "_images": [
-      ["default.png", "Header image"]
+      ["welcome.png", "Header image"]
       ],
     "_text": [
       "Hello!",
@@ -13,15 +13,16 @@
     "_id": 0
   },
   {
-    "_description": "Hello World",
+    "_description": "I finally made this website and it turned out quite OK.",
     "_unread": false,
     "_images": [
       ["default.png", "Header image"]
       ],
     "_text": [
-      "This is the backside of a card",
-      "it contains different amouts of paragraphs",
-      "Look, Here's three of them!"
+      "What you see before your very eyes is my own design, made from scratch.",
+      "I can't say that this is perfect design nor perfectly made. However, I actually did it! I can barely believe it. All these times I've made shitty websites and now this: The best of the shitty websites!",
+      "How did I do it then?",
+      "I had to start somewhere so I actually started with the smallest piece, this Card."
       ],
     "_title": "Hello World",
     "_id": 1
@@ -30,7 +31,7 @@
     "_description": "Extremely long description which hopefully doesn't look so ugly. I mean, after all it is just a description. But about what? I don't know. It is, however, extremely long!",
     "_unread": false,
     "_images": [
-      ["default.png", "Header image"]
+      ["large.png", "Large header image"]
       ],
     "_text": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a tincidunt lorem, in sollicitudin massa. Quisque tortor risus, viverra in lobortis ultricies, commodo in felis. Integer interdum, justo vitae eleifend mollis, dolor augue aliquam enim, id dapibus metus magna vel dolor. Maecenas maximus ligula quis diam aliquet, at accumsan justo tristique. Vestibulum nulla mi, tincidunt sed iaculis id, commodo eu est. Donec sollicitudin enim ante, non gravida dolor finibus at. Aenean consequat tellus rutrum libero viverra, in vehicula ante varius. Sed et eros ut dolor sodales cursus. Vivamus egestas posuere luctus. Phasellus a ligula non arcu tempor dapibus pellentesque sit amet dolor. Curabitur tempus, massa sed dapibus bibendum, justo velit fermentum leo, feugiat gravida diam turpis nec sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Vivamus placerat est eget elit tristique, et laoreet purus placerat.",
@@ -48,244 +49,20 @@
     "_id": 2
   },
   {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 3
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 4
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 5
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 6
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 7
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 8
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 9
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 10
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 11
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 12
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 13
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 14
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 15
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 16
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 17
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 18
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 19
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 20
-  },
-  {
-    "_description": "Empty Card",
-    "_unread": false,
-    "_images": [
-      ["default.png", "Header image"]
-      ],
-    "_text": [
-      "This is the backside of a card"
-      ],
-    "_title": "Empty Card",
-    "_id": 21
-  },
-  {
     "_description": "Last Card",
     "_unread": false,
     "_images": [
-      ["default.png", "Header image"]
+      ["face.png", "It's a me!"]
       ],
     "_text": [
       "This is the backside of the last card.",
-      "Congratulations!"
+      "Congratulations!",
+      "So there's a picture of me.",
+      "Now, would you kindly look into my eyes and stare into my soul.",
+      "Do you feel it?",
+      "I did."
       ],
     "_title": "The Last Card",
-    "_id": 22
+    "_id": 3
   }
 ]
