@@ -16,7 +16,6 @@ h1 {
     float: left;
 }
 
-
 #blocker {
   position: absolute;
   height: 100%;
@@ -29,6 +28,10 @@ h1 {
   background-color: rgba(0,0,0,0.3);
   z-index: 1;
   overflow: hidden;
+}
+
+#blocker:hover {
+  cursor: pointer;
 }
 
 .col-1 {width: 8.33%;}
@@ -96,6 +99,13 @@ h1 {
   transition: max-height 1s ease, height 1s ease, min-width 1s ease;
 }
 
+.card:hover {
+  cursor: pointer;
+
+  margin-top: -1em;
+  -webkit-box-shadow: 1.5em 1.5em 1.3em rgba(0,0,0,0.2);
+  box-shadow: 1.5em 1.5em 1.3em rgba(0,0,0,0.2);
+}
 
 .card-top {
   height: 40%;
@@ -157,7 +167,15 @@ h1 {
   min-width: 70%;
   overflow: auto;
   z-index: 2;
+  margin-top:2% !important; /* YOU JUMP WHEN I TELL YOU TO*/
+  -webkit-box-shadow: 1.5em 1.5em 1.3em rgba(0,0,0,0.2);
+  box-shadow: 1.5em 1.5em 1.3em rgba(0,0,0,0.2);
 }
+
+.enhanced:hover {
+  cursor: unset !important;
+}
+
 .card-minimize {
   float: right;
   border: 1px solid black;

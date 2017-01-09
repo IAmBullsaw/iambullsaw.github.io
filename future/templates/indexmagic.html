@@ -11,9 +11,9 @@
       // Get the elements
       let b = document.getElementById('blocker');
       let c = document.getElementById("card-"+id);
-      let d = document.getElementById("card-container");
       let front = document.getElementById("card-front-"+id);
       let back = document.getElementById("card-back-"+id);
+      let d = document.getElementById("card-container");
 
       // ENHANCE
       aCardIsFocused = Number(id);
@@ -29,9 +29,9 @@
       console.log('Unhenhance: ' + aCardIsFocused);
       let b = document.getElementById('blocker');
       let c = document.getElementById("card-"+aCardIsFocused);
-      let d = document.getElementById("card-container");
       let front = document.getElementById("card-front-"+aCardIsFocused);
       let back = document.getElementById("card-back-"+aCardIsFocused);
+      let d = document.getElementById("card-container");
 
       aCardIsFocused = -1;
       front.classList.remove('hidden');
