@@ -50,7 +50,7 @@
     <div id="blocker" class="hidden"></div>
       <div id="card-container" class="container">
         {% for card in cards %}
-        <div id="card-{{card._id}}" class="card card-size-large" onclick="onClickCard({{card._id}})">
+        <div id="card-{{card._id}}" class="card card-size" onclick="onClickCard({{card._id}})">
           <!-- The things both sides have in common -->
           <div class="card-top">
             <h1>{{card._title}}</h1>

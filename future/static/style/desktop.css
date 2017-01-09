@@ -73,25 +73,13 @@ body, html {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-
-.card-size-small {
-  min-width: 100px;
-  max-width: 100px;
-  max-height: 187px;
-}
-
-.card-size-medium {
-  min-width: 200px;
-  max-width: 200px;
-  max-height: 373px;
-}
-
-.card-size-large {
+.card-size {
   min-width: 300px;
   max-width: 300px;
   min-height: 560px;
   max-height: 560px;
 }
+
 /* I AM SO SORRY */
 .card-size-full {
   align-self: baseline;
