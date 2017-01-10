@@ -1,13 +1,14 @@
 [
   {
-    "_description": "Click a card",
+    "_description": "Click on a card!",
     "_unread": false,
     "_images": [
       ["welcome.png", "Header image"]
       ],
     "_text": [
       "Hello!",
-      "What you see here.These are projects I have made."
+      "What you see here are projects I've done or been a part of. Amongst them this website.",
+      "Feel free to explore. I can't say I've not hidden small surprises."
       ],
     "_title": "Welcome",
     "_id": 0
