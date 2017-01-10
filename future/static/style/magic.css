@@ -99,6 +99,16 @@ h1 {
   transition: max-height 1s ease, height 1s ease, min-width 1s ease;
 }
 
+/* I AM SO SORRY */
+.card-size-full {
+  width: 100%;
+  min-height: 90%;
+  margin: 2% !important;
+  -webkit-box-shadow: 23px 23px 17px rgba(0,0,0,0.2) !important;
+  box-shadow: 23px 23px 17px rgba(0,0,0,0.2) !important;
+  cursor: unset !important;
+}
+
 .card:hover {
   cursor: pointer;
 
@@ -137,6 +147,7 @@ h1 {
   overflow: hidden;
   display: flex;
   align-items: center;
+  background-color: snow;
 }
 
 .header a {
@@ -155,6 +166,7 @@ h1 {
   bottom: 0;
   display: flex;
   align-items: center;
+  background-color: snow;
 }
 
 .footer p {
@@ -191,7 +203,13 @@ h1 {
 #thank-you {
   min-width: 100%;
   min-height: 100%;
-  background-color: blue;
+  background-color: rgb(100, 100, 130);
+  margin-left: 2%;
+}
+
+#thank-you>div {
+  margin-top: 20%;
+  padding: 0;
 }
 
 #thank-you p {
